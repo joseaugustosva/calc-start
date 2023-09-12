@@ -12,36 +12,34 @@
 
 <body>
 
-  <div class="contaienr">
+  <div class="container">
 
-    <header class="jumbotron jumbotron-fluid">
-      <div class="container">
-        <h1 class="display-4">Calc - START</h1>
-        <p class="lead">Calculadora desenvolvida em javascript e bootstrap v4.1</p>
-      </div>
+    <header class="jumbotron">
+      <h1 class="display-4 font-weight-bold">Calc - START</h1>
+      <p class="lead">Calculadora desenvolvida em javascript e bootstrap v4.1</p>
     </header>
 
     <section class="row">
 
-      <div class="col-sm-4">
+      <div class="col-md-4">
         <input class="form-control" type="text" placeholder="Digite um número">
       </div>
 
-      <div class="col-sm-4">
+      <div class="col-md-4">
 
-        <select class="form-control">
+        <select class="custom-select custom-select-lg bg-dark text-light">
 
-          <option value="">-- Slecione uma operação</option>
-          <option value="1">Adição</option>
-          <option value="2">Subtração</option>
-          <option value="3">Multiplicação</option>
-          <option value="4">Divisão</option>
+          <option value="">- Slecione a operação</option>
+          <option value="1">( + ) Adição</option>
+          <option value="2">( - ) Subtração</option>
+          <option value="3">( * ) Multiplicação</option>
+          <option value="4">( / ) Divisão</option>
 
         </select>
 
       </div>
 
-      <div class="col-sm-4">
+      <div class="col-md-4">
         <input class="form-control" type="text" placeholder="Digite um número">
       </div>
 
@@ -51,17 +49,33 @@
 
     <section class="row">
 
-      <div class="col-sm-3"></div>
+      <div class="col-md-3"></div>
 
-      <div class="col-sm-6">
+      <div class="col-md-6">
 
-        <button type="button" class="btn btn-dark btn-block btn-lg">
+        <button type="button" class="btn btn-success btn-block btn-lg">
           Calcular
         </button>
 
       </div>
 
-      <div class="col-sm-3"></div>
+      <div class="col-md-3"></div>
+
+    </section>
+
+    <hr class="my-4">
+
+    <section class="row">
+
+      <div class="col-md-3"></div>
+
+      <div class="col-md-6">
+        <label class="text-uppercase font-weight-bold" for="resultado-mostrar">Resultado</label>
+        <input class="form-control form-control-lg shadow p-3 mb-5 rounded" type="text" id="resultado-mostrar" readonly>
+      </div>
+
+      <div class="col-md-3"></div>
+
 
     </section>
 
