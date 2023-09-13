@@ -6,10 +6,6 @@ function calcular() {
   var num1 = document.getElementById("num1").value;
   var num2 = document.getElementById("num2").value;
 
-  //Forçando o tipo da variável
-  num1 = parseFloat(num1);
-  num2 = parseFloat(num2);
-
   //Condição para quando a pessoa não digita algum valor no campo input
   if (num1 == "" || num1 == null) {
     alert("Digitar um número válido no PRIMEIRO campo");
@@ -20,6 +16,10 @@ function calcular() {
     alert("Digitar um número válido no SEGUNDO campo");
     return false;
   }
+
+  //Forçando o tipo da variável
+  num1 = parseFloat(num1);
+  num2 = parseFloat(num2);
 
   //variável resultado
   var resultado = null;
