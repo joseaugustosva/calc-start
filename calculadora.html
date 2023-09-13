@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
   <!-- Javascript -->
-  <script src="scripts/maingit .js"></script>
+  <script src="/calculadora-projeto/main.js"></script>
 
 </head>
 
@@ -18,19 +18,19 @@
   <div class="container">
 
     <header class="jumbotron">
-      <h1 class="display-4 font-weight-bold">Calc - START</h1>
+      <h1 class="display-4 font-weight-bold">CalcSTART</h1>
       <p class="lead">Calculadora desenvolvida em javascript e bootstrap v4.1</p>
     </header>
 
     <section class="row">
 
       <div class="col-md-4">
-        <input class="form-control" type="text" placeholder="Digite um número">
+        <input id="num1" class="form-control" type="text" placeholder="Digite um número">
       </div>
 
       <div class="col-md-4">
 
-        <select class="custom-select custom-select-lg bg-secondary text-white">
+        <select id="operacao" class="custom-select custom-select-lg bg-secondary text-white">
 
           <option value="">- Slecione a operação</option>
           <option value="1">( + ) Adição</option>
@@ -43,7 +43,7 @@
       </div>
 
       <div class="col-md-4">
-        <input class="form-control" type="text" placeholder="Digite um número">
+        <input id="num2" class="form-control" type="text" placeholder="Digite um número">
       </div>
 
     </section>
@@ -56,7 +56,7 @@
 
       <div class="col-md-6">
 
-        <button type="button" class="btn btn-success btn-block btn-lg">
+        <button type="button" class="btn btn-success btn-block btn-lg" onclick="calcular()">
           Calcular
         </button>
 
@@ -74,7 +74,7 @@
 
       <div class="col-md-6">
         <label class="text-uppercase font-weight-bold" for="resultado-mostrar">Resultado</label>
-        <input class="form-control form-control-lg shadow p-3 mb-5 rounded" type="text" id="resultado-mostrar" readonly>
+        <input id="resultado" class="form-control form-control-lg shadow p-3 mb-5 rounded" type="text" id="resultado-mostrar" readonly>
       </div>
 
       <div class="col-md-3"></div>
